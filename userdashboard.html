@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">U</div>
+                <span class="logo-text">UtiliSense</span>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-section">
+                    <span class="nav-section-title">Main Menu</span>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">
+                                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="7" height="7" rx="1"/>
+                                    <rect x="14" y="3" width="7" height="7" rx="1"/>
+                                    <rect x="3" y="14" width="7" height="7" rx="1"/>
+                                    <rect x="14" y="14" width="7" height="7" rx="1"/>
+                                </svg>
+                                Dashboard
+                            </a>
+                        </li>
+                        
+                        
+                        <li class="nav-item">
+                            <a href="settings.html" class="nav-link">
+                                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="3"/>
+                                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                                </svg>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-section">
+                    <span class="nav-section-title">Account</span>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link">
+                                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+                                    <polyline points="16 17 21 12 16 7"/>
+                                    <line x1="21" y1="12" x2="9" y2="12"/>
+                                </svg>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Navbar -->
+            <nav class="navbar">
+                <h1 class="page-title">User Dashboard Overview</h1>
+                <div class="navbar-right">
+                    <button class="nav-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                        </svg>
+                        <span class="notification-dot"></span>
+                    </button>
+                    <button class="nav-btn" id="theme-toggle" title="Toggle Light/Dark Mode">
+                        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="4"/>
+                            <path d="M12 2v2"/><path d="M12 20v2"/>
+                            <path d="M4.93 4.93l1.41 1.41"/><path d="M17.66 17.66l1.41 1.41"/>
+                            <path d="M2 12h2"/><path d="M20 12h2"/>
+                            <path d="M6.34 17.66l-1.41 1.41"/><path d="M19.07 4.93l-1.41 1.41"/>
+                        </svg>
+                        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Stats Cards -->
+            <section class="stats-grid">
+                <div class="glass-card glass-card-3d stat-card">
+  <div class="stat-card-inner">
+    <div class="stat-info">
+      <h3>💡 Electricity Usage</h3>
+
+      <!-- Daily -->
+      <div class="stat-value">
+        <strong>Daily:</strong> <span id="dailyCounter">0.0</span> kWh
+      </div>
+
+      <!-- Weekly -->
+      <div class="stat-value">
+        <strong>Weekly:</strong> <span id="weeklyCounter">0.0</span> kWh
+      </div>
+
+      <!-- Monthly -->
+      <div class="stat-value">
+        <strong>Monthly:</strong> <span id="monthlyCounter">0.0</span> kWh
+      </div>
+    </div>
+
+    <!-- Lightning bolt logo directly, no box -->
+    <svg viewBox="0 0 24 24" fill="none" stroke="var(--blue-light)" stroke-width="2" style="width:40px;height:40px;position:absolute;top:15px;right:15px;">
+      <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+    </svg>
+  </div>
+</div>
+
+
+                <div class="glass-card glass-card-3d stat-card">
+  <div class="stat-card-inner">
+    <div class="stat-info">
+      <h3>💧 Water Usage</h3>
+
+      <!-- Daily -->
+      <div class="stat-value">
+        <strong>Daily:</strong> <span id="waterDailyCounter">0.0</span> m³
+      </div>
+
+      <!-- Weekly -->
+      <div class="stat-value">
+        <strong>Weekly:</strong> <span id="waterWeeklyCounter">0.0</span> m³
+      </div>
+
+      <!-- Monthly -->
+      <div class="stat-value">
+        <strong>Monthly:</strong> <span id="waterMonthlyCounter">0.0</span> m³
+      </div>
+    </div>
+
+    <!-- Water drop logo at upper right -->
+    <svg viewBox="0 0 24 24" fill="none" stroke="var(--cyan-light)" stroke-width="2" 
+         style="width:40px;height:40px;position:absolute;top:15px;right:15px;">
+      <path d="M12 2C8 8 6 12 6 16a6 6 0 0 0 12 0c0-4-2-8-6-14z"/>
+    </svg>
+  </div>
+</div>
+
+
+                <div class="glass-card glass-card-3d stat-card">
+  <div class="stat-card-inner">
+    <div class="stat-info">
+      <h3>🌐 Internet Usage</h3>
+
+      <!-- Daily -->
+      <div class="stat-value">
+        <strong>Daily:</strong> <span id="internetDailyCounter">0.0</span> GB
+      </div>
+
+      <!-- Weekly -->
+      <div class="stat-value">
+        <strong>Weekly:</strong> <span id="internetWeeklyCounter">0.0</span> GB
+      </div>
+
+      <!-- Monthly -->
+      <div class="stat-value">
+        <strong>Monthly:</strong> <span id="internetMonthlyCounter">0.0</span> GB
+      </div>
+    </div>
+
+    <!-- Globe logo at upper right -->
+    <svg viewBox="0 0 24 24" fill="none" stroke="var(--cyan-light)" stroke-width="2"
+         style="width:40px;height:40px;position:absolute;top:15px;right:15px;">
+      <circle cx="12" cy="12" r="10"/>
+      <path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20"/>
+    </svg>
+  </div>
+</div>
+
+<div class="glass-card glass-card-3d stat-card">
+  <div class="stat-card-inner">
+    <div class="stat-info">
+      <h3 class="utility-title">Enter Utility Data</h3>
+
+      <form id="utilityForm" class="utility-form">
+        <!-- Electricity -->
+        <label for="electricity">⚡ Electricity (kWh):</label>
+        <input type="number" id="electricity" name="electricity" placeholder="Enter value" required>
+
+        <!-- Water -->
+        <label for="water">💧 Water (m³):</label>
+        <input type="number" id="water" name="water" placeholder="Enter value" required>
+
+        <!-- Internet -->
+        <label for="internet">🌐 Internet (GB):</label>
+        <input type="number" id="internet" name="internet" placeholder="Enter value" required>
+
+         <button type="submit">Save Data</button>
+      </form>
+
+      <!-- Feedback message -->
+      <div id="utilityMessage"></div>
+    </div>
+  </div>
+</div>
+
+
+</section>
+          
+
+            
+            <!-- Bottom Grid -->
+            <section class="bottom-grid">
+                <!-- Calendar Widget -->
+                <div class="glass-card">
+                    <div class="calendar-header">
+                        <h2 class="card-title">April 2026</h2>
+                        <div class="calendar-nav">
+                            <button class="calendar-nav-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+                            <button class="calendar-nav-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+                        </div>
+                    </div>
+                    <div class="calendar-grid">
+                        <span class="calendar-day-name">Sun</span><span class="calendar-day-name">Mon</span><span class="calendar-day-name">Tue</span><span class="calendar-day-name">Wed</span><span class="calendar-day-name">Thu</span><span class="calendar-day-name">Fri</span><span class="calendar-day-name">Sat</span>
+                        <span class="calendar-day other-month">29</span><span class="calendar-day other-month">30</span><span class="calendar-day other-month">31</span><span class="calendar-day today">1</span><span class="calendar-day">2</span><span class="calendar-day">3</span><span class="calendar-day">4</span>
+                        <span class="calendar-day">5</span><span class="calendar-day">6</span><span class="calendar-day">7</span><span class="calendar-day">8</span><span class="calendar-day">9</span><span class="calendar-day">10</span><span class="calendar-day">11</span>
+                        <span class="calendar-day">12</span><span class="calendar-day">13</span><span class="calendar-day">14</span><span class="calendar-day">15</span><span class="calendar-day">16</span><span class="calendar-day">17</span><span class="calendar-day">18</span>
+                        <span class="calendar-day">19</span><span class="calendar-day">20</span><span class="calendar-day">21</span><span class="calendar-day">22</span><span class="calendar-day">23</span><span class="calendar-day">24</span><span class="calendar-day">25</span>
+                        <span class="calendar-day">26</span><span class="calendar-day">27</span><span class="calendar-day">28</span><span class="calendar-day">29</span><span class="calendar-day">30</span><span class="calendar-day">1</span><span class="calendar-day other-month">2</span>
+                    </div>
+                </div>
+
+                <!-- Donut Chart -->
+                <div class="glass-card">
+                    <div class="card-header">
+                        <div>
+                            <h2 class="card-title">Utility Consumption Breakdown</h2>
+                            <p class="card-subtitle">Distribution of Electricity, Water, and Internet usage</p>
+                        </div>
+                    </div>
+                    <div class="donut-container">
+                        <div class="donut-chart">
+                            <svg width="140" height="140" viewBox="0 0 140 140">
+                                <circle class="donut-bg" cx="70" cy="70" r="54"/>
+                                <circle class="donut-segment" cx="70" cy="70" r="54" stroke="var(--emerald-light)" stroke-dasharray="169.6 339.3" stroke-dashoffset="0"/>
+                                <circle class="donut-segment" cx="70" cy="70" r="54" stroke="var(--gold)" stroke-dasharray="101.8 339.3" stroke-dashoffset="-169.6"/>
+                                <circle class="donut-segment" cx="70" cy="70" r="54" stroke="var(--coral)" stroke-dasharray="67.9 339.3" stroke-dashoffset="-271.4"/>
+                            </svg>
+                            
+                        </div>
+                        <div class="donut-legend">
+                            <div class="legend-item"><span class="legend-color cyan"></span><span>Electricity (50%)</span></div>
+                            <div class="legend-item"><span class="legend-color magenta"></span><span>Water (30%)</span></div>
+                            <div class="legend-item"><span class="legend-color purple"></span><span>Internet (20%)</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progress Card -->
+  <div class="glass-card progress-card">
+  <div class="card-header">
+    <div>
+      <h2 class="card-title">Utility Consumption Goals</h2>
+      <p class="card-subtitle">Progress toward usage limits</p>
+    </div>
+  </div>
+
+  <div class="progress-item">
+    <div class="progress-header"><span class="progress-label">Electricity</span><span class="progress-value">85%</span></div>
+    <div class="progress-bar"><div class="progress-fill cyan" style="width: 85%;"></div></div>
+  </div>
+
+  <div class="progress-item">
+    <div class="progress-header"><span class="progress-label">Water</span><span class="progress-value">62%</span></div>
+    <div class="progress-bar"><div class="progress-fill magenta" style="width: 62%;"></div></div>
+  </div>
+
+  <div class="progress-item">
+    <div class="progress-header"><span class="progress-label">Internet</span><span class="progress-value">45%</span></div>
+    <div class="progress-bar"><div class="progress-fill purple" style="width: 45%;"></div></div>
+  </div>
+</div>
+
+            </section>
+        </main>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+    </button>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>Copyright © 2026 UtiliSense Technologies.</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

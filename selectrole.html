@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Role</title>
+  <link rel="stylesheet" href="selectrole.css">
+</head>
+<body>
+  <!-- Background -->
+  <div class="background"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <div class="role-container">
+    <div class="role-card">
+      <h1>Welcome to UtiliSense</h1>
+      <p>Please select your role:</p>
+      <div class="buttons">
+        <button onclick="setRole('admin')">Admin</button>
+        <button onclick="setRole('user')">User</button>
+      </div>
+      <div id="message"></div>
+    </div>
+  </div>
+
+  <script src="selectrole.js"></script>
+</body>
+</html>
